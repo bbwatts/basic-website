@@ -1,9 +1,29 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
     background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
+    font-family: "Oswald", sans-serif; /*Replace with your body font */
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-h1, h2, h3, h4, h5, h6
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "BBH Sans Bogle", sans-serif; /*Replace with your heading fonts*/
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+a.hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
 header {
+    position: relative;
     border-bottom: 2px solid red;
 }
 
@@ -11,19 +31,46 @@ header {
     display: none;
 }
 
+nav {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+}
+
+header button {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: none;  
-  opacity: 0;
   border: 1px solid black;
+}
+
+nav ul li {
+    border: 1px solid white;
 }
 
 nav ul li a {
     text-decoration: none;
     display: block;
     padding: 10px;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+nav ul li a:active {
+    background-color: #e01c1c;
 }
 
 /* Tablet */
@@ -46,20 +93,8 @@ nav ul li a {
         display: inline-block;
     }
 
-
-    nav ul {
-        opacity: 0;
-        display: none;
-        position: absolute;
-        width: 100%;
-        background-color:rgb(65, 218, 123)
-    }
-
     header button {
-        z-index: 1;
-        position: relative;
-        top: 10px;
-        left: 10px;
+        display: none;
     }
 
     nav ul { 
@@ -72,4 +107,3 @@ nav ul li a {
     }
 
 }
-
