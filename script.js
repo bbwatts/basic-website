@@ -1,5 +1,7 @@
 function toggleMenu(evt) {
+    // Toggle navigation menu visibility
     let nav = document.querySelector("#nav-list");
+    
     if (nav.style.display === "block") {
         evt.target.innerText = "=";
         nav.style.display = "none";

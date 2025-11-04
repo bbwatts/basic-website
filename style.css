@@ -17,6 +17,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.oswald-500 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.oswald-600 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.oswald-700 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 a.hover {
   background-color: #f0f0f0;
   color: #333;
@@ -83,6 +105,17 @@ nav ul li a:active {
 
 /* Desktop */
 @media screen and (min-width: 930px) {
+
+    nav {
+        display: block;
+        opacity: 1;
+        position: relative;
+        text-align: left;
+    }
+
+    nav ul li {
+        border: none;
+    }
 
     section {
         display: inline-block;
